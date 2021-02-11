@@ -34,22 +34,49 @@
                 <a href="modules.html">Модули</a></p>
         </div>
         <div class="content_div">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer erat arcu, auctor non odio sed, mattis hendrerit tellus. Vivamus nec aliquam velit. Donec purus lectus, euismod porttitor finibus sed, feugiat quis mi. Sed non neque non ante dictum laoreet
-            ut eu sem. Phasellus ut arcu cursus, facilisis dolor non, volutpat neque. Phasellus sapien nisl, aliquam at fringilla ut, semper sed mauris. Nullam mollis fermentum pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia
-            nostra, per inceptos himenaeos. In volutpat nibh ac felis vulputate, non lacinia neque gravida. Suspendisse condimentum velit at metus suscipit, sit amet pretium enim ullamcorper. Fusce finibus varius suscipit. Integer suscipit iaculis porttitor.
-            Nunc consectetur, nisl eget fermentum semper, arcu est luctus purus, vel euismod felis neque sed quam. Maecenas sit amet turpis lacinia, aliquam purus id, malesuada dolor. Phasellus sodales leo id elit hendrerit venenatis. Sed vel est dignissim
-            velit volutpat elementum. Sed venenatis, diam eget viverra accumsan, velit libero posuere ante, non ornare felis magna id nisi. Pellentesque eget hendrerit purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-            turpis egestas. Phasellus posuere tortor et lectus commodo varius. Proin et diam id dolor gravida vehicula at id mauris. Sed lacus ligula, tincidunt vel consequat sed, lacinia suscipit diam. Pellentesque tincidunt ut neque id pretium. Aenean
-            bibendum enim vitae justo viverra, nec sollicitudin libero finibus. Proin finibus augue ullamcorper orci fringilla, maximus finibus eros mattis. Proin pharetra, enim vitae tincidunt tempor, ex turpis sodales tellus, sit amet viverra lacus
-            enim scelerisque ligula. In venenatis ligula lectus, efficitur ultricies felis maximus a. Phasellus tincidunt, turpis eu lobortis facilisis, quam turpis suscipit velit, ut condimentum lorem turpis eget elit. Mauris eget accumsan nisl. Donec
-            vitae quam mattis, dignissim urna a, commodo ex. Vestibulum vitae ipsum velit. Nulla facilisi. In blandit luctus elit. In at dui lectus. Donec sit amet egestas nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-            cubilia curae; Quisque porta nibh eu ligula fermentum vestibulum. Curabitur sit amet vehicula lacus. Nulla vel lorem ante. Pellentesque tempus id augue vel cursus. Pellentesque consequat magna quis lorem suscipit, ultricies tristique justo
-            vehicula. Sed ut diam nec eros rutrum malesuada. Donec placerat porta nunc. Proin auctor vulputate leo, ut suscipit purus rutrum vestibulum. Maecenas eu libero metus. Nulla pretium accumsan nunc nec scelerisque. Curabitur id ligula a mauris
-            facilisis tempus at nec quam. Ut sem est, fermentum nec diam sit amet, mattis mollis leo. Suspendisse pretium pulvinar ante id commodo. Nullam sit amet pellentesque quam. Duis mauris sem, ornare et semper vel, ultricies quis turpis. Nam mauris
-            nunc, condimentum id maximus tempus, iaculis sed diam. Curabitur nunc quam, imperdiet at accumsan non, tincidunt vitae nulla. Curabitur rhoncus orci ipsum, non suscipit tortor ultrices fringilla. Proin eleifend interdum neque, et consequat
-            nunc sollicitudin dapibus. Quisque congue sollicitudin nibh, at interdum nulla. Curabitur at commodo purus. Etiam nisl dui, pharetra ut magna id, rhoncus viverra dui. Integer condimentum fermentum nisi in viverra. Vestibulum nulla felis, suscipit
-            vitae aliquet vitae, volutpat vel nibh. Phasellus mollis, mi vitae porttitor tincidunt, est sapien lobortis metus, nec cursus eros orci ac orci. Nulla ut ultrices magna. Fusce interdum dolor et vestibulum molestie. Integer id sem a libero
-            ullamcorper fermentum. Vivamus convallis ligula et laoreet vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris nec lobortis leo. Mauris id nunc in metus pharetra egestas.
+            <h2>Циклы</h2>
+            <p><b>Циклы</b> - тоже неотъемлемая часть наших программ!</p>
+            <p>В Python циклы бывают двух видов: с <b>условием</b> и с <b>параметром</b>.</p>
+            <p>Начнем с цикла с условием.</p>
+            <h3>Пароль неверный!</h3>
+            <p>Реализуем такой алгоритм, при котором пользователь не может пройти дальше, <b>пока</b> не введет верный пароль. Количество попыток неограниченно.</p>
+            <p>Для этого нам понадобится цикл <b>while</b> (пока, до тех пор как). Логика программы такова: пока вводится неверный пароль, просить его ввести заново, иначе вывести строку "Добро пожаловать!".</p>
+            <p>Изучим конструкцию <b>цикла while:</b></p>
+            <div class="code">
+                while
+                <условие>:<br>&nbsp;&nbsp;&nbsp;&nbsp;команда1<br>&nbsp;&nbsp;&nbsp;&nbsp;команда2
+            </div>
+            <p><b>Цикл</b> выполняется, пока условие <b>истинно</b>.</p>
+            <p>Код:</p>
+            <div class="code">
+                password = input("Введите пароль:")<br> while password != "python":<br>&nbsp;&nbsp;&nbsp;&nbsp;password = input("Попробуйте еще раз:")<br>print("Добро пожаловать!")
+            </div>
+            <p>В данном случае команда повторного ввода пароля будет выполняться каждый раз, когда введенный пароль не равняется "python". Как только выражение password != "python" будет равно False, тогда <b>цикл закончится</b> и выполнится четвертая строчка
+                кода.
+            </p>
+            <h2>Один, два, три...</h2>
+            <p>С помощью <b>цикла while</b> также можно создать <b>цикл-счетчик</b>.</p>
+            <p>Для начала создается <b>переменная-счетчик</b> - переменная, в которой будет храниться число итераций (повторов) цикла.</p>
+            <div class="code">
+                count = 1<br> while count
+                <=5:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(count)<br>&nbsp;&nbsp;&nbsp;&nbsp;count += 1
+            </div>
+            <p>Согласно условию, цикл выполняется до тех пор, <b>пока</b> счетчик меньше либо равен пяти. Каждую <b>итерацию цикла</b> выводится текущее значение переменной <b>count</b>, которая каждый раз увеличивается на единицу.</p>
+            <h2>Список продуктов</h2>
+            <p>Реализуем решение задачи с помощью <b>цикла for</b> (для).</p>
+            <p><b>Цикл for</b> используется для перебора элементов последовательностей, например списков или диапазона чисел.</p>
+            <p>Допустим, у нас есть список необходимых для покупки товаров: огурцы, помидоры, шоколад, бутылка воды. Необходимо вывести эти товары по очереди с новой строки.</p>
+            <div class="code">
+                goods = ['огурцы', 'помидоры', 'шоколад', 'бутылка воды']<br>print("Список товаров:")<br>for item in goods:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(item)
+            </div>
+            <p>Т.е. <b>для</b> каждого товара (<b>item</b>) в (<b>in</b>) списке <b>oods</b>g необходимо выполнить печать его название на экране.</p>
+            <h2>Пять, шесть, семь...</h2>
+            <p>Цикл-счетчик можно написать и с помощью <b>цикла for</b>. Даже проще.</p>
+            <p>Для того, чтобы задать <b>диапазон</b> чисел, используется функция <b>range(n, m)</b>, где <b>n</b> - число начала диапазона, а <b>m</b> - число конца-1. Т.е. <b>range(1, 10)</b> - это последовательность чисел от 1 до 9.</p>
+            <div class="code">
+                for num in range(5, 8):<br>&nbsp;&nbsp;&nbsp;&nbsp;print(num)
+            </div>
+            <p>На экран будут выведены числа 5, 6 и 7.</p>
         </div>
     </div>
 </body>
