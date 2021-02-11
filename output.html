@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебник Python | Вывод данных</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <a href="index.html" class="header_div">
+        <img class="img_logo" src="img/python-logo.svg" alt="Учебник Python">
+        <h1>Учебник Python</h1>
+    </a>
+    <div class="main_div">
+        <div class="nav_div">
+            <p class="nav_element">
+                <a href="output.html">Вывод данных</a></p>
+            <p class="nav_element">
+                <a href="input.html">Ввод данных</a></p>
+            <p class="nav_element">
+                <a href="variables.html">Переменные</a></p>
+            <p class="nav_element">
+                <a href="types.html">Типы данных</a></p>
+            <p class="nav_element">
+                <a href="operator.html">Условный оператор</a></p>
+            <p class="nav_element">
+                <a href="cicles.html">Циклы</a></p>
+            <p class="nav_element">
+                <a href="functions.html">Функции</a></p>
+            <p class="nav_element">
+                <a href="modules.html">Модули</a></p>
+        </div>
+        <div class="content_div">
+            <h2>Вывод данных</h2>
+            <p>Для <b>вывода данных</b> в <b>Python</b> используется функция <b>print()</b>. В качестве аргумента в функции могут выступать <b>строки</b>, <b>числа</b> и другая информация различных типов данных.</p>
+            <h3>Hello, world!</h3>
+            <p>Напишем всеми известную первую программу начинающего программиста – <b>Hello, world!</b> Код:</p>
+            <div class="code">
+                print("Hello, world!")
+            </div>
+            <p>Стоит отметить, что <b>ВСЕ</b> строки с вашим статичным текстом должны быть заключены кавычками с двух сторон. Только так <b>Python</b> и функция <b>print()</b> поймет, что задача состоит в том, чтобы <b>вывести текст</b>.</p>
+            <h3>А как же числа?</h3>
+            <p><b>Выводить</b> можно <b>целые, дробные, комплексные числа</b>. Дробная часть отделяется точкой. Посмотрим:</p>
+            <div class="code">
+                print(2.5)
+            </div>
+            <p>Если же речь идет только о числах, то данные такого типа можно <b>выводить</b> без кавычек. Здесь же можно <b>производить</b> различные <b>вычисления</b>: сложение, вычитание, умножение, деление, возведение в степень, например print(2*2) –
+                интерпретатор выведет 4.
+            </p>
+            <h3>print(name)?</h3>
+            <p>Через <b>print()</b> также можно <b>выводить</b> значения <u><b><a href = "variables.html">переменных</a></b></u>. Выведем значение переменной name. Как это выглядит:
+            </p>
+            <div class="code">
+                name = "Andrew"<br>print(name)
+            </div>
+            <p>Интерпретатор выведет имя Andrew.</p>
+            <h3>Конкатенация? Что?</h3>
+            <p>Попросту говоря, <i><b>конкатенация</b></i> – это склеивание строк, например:</p>
+            <div class="code">
+                name = "Andrew"<br>print("Hello" + name)
+            </div>
+            <p>Таким образом, мы можем <b>склеить</b> между собой две и более строки и <b>вывести</b> их.</p>
+            <h3>PythonPythonPython</h3>
+            <p>Умножить <b>строку</b> на <b>число</b>? Легко!</p>
+            <div class="code">
+                print("Python"*3)
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

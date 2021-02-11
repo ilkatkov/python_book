@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебник Python | Вывод данных</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <a href="index.html" class="header_div">
+        <img class="img_logo" src="img/python-logo.svg" alt="Учебник Python">
+        <h1>Учебник Python</h1>
+    </a>
+    <div class="main_div">
+        <div class="nav_div">
+            <p class="nav_element">
+                <a href="output.html">Вывод данных</a></p>
+            <p class="nav_element">
+                <a href="input.html">Ввод данных</a></p>
+            <p class="nav_element">
+                <a href="variables.html">Переменные</a></p>
+            <p class="nav_element">
+                <a href="types.html">Типы данных</a></p>
+            <p class="nav_element">
+                <a href="operator.html">Условный оператор</a></p>
+            <p class="nav_element">
+                <a href="cicles.html">Циклы</a></p>
+            <p class="nav_element">
+                <a href="functions.html">Функции</a></p>
+            <p class="nav_element">
+                <a href="modules.html">Модули</a></p>
+        </div>
+        <div class="content_div">
+            <h2>Ввод данных</h2>
+            <p>Запрос данных от пользователя выполняет функция <b>input()</b>. Ее аргументом может быть <b>строка</b>, например вопрос, на который пользователь должен дать ответ. Данные, которые примет <b>input()</b> с клавиатуры, необходимо поместить в
+                <b>переменную</b>. Запросим у пользователя ответ на вопрос и выведем его:</p>
+            <div class="code">
+                answer = input("Как дела?")<br>print(answer)
+            </div>
+            <p>Python выведет наш ответ.</p>
+            <p>Важно запомнить, что <b>input() всегда возвращает строку</b>.</p>
+            <h3>Преобразовываем данные?</h3>
+            <p>Допустим, нам необходимо ввести число с клавиатуры, и впоследствии, вывести результат его умножения на 10, то нам нужно изменить тип данных той переменной, куда мы записывали ответ на наш <b>input()</b>. Т. к. <b>input()</b> возвращает тип
+                данных «строка», нам нужно поменять этот тип данных на «число». Делается это с помощью встроенной в <b>Python</b> функцией int(). В качестве аргумента для функции <b>берется строка</b>, где находятся <b>ТОЛЬКО цифры</b> (нельзя превратить
+                буквы и символы в числа):
+            </p>
+            <div class="code">
+                num = input("Введи число:")<br>num = int(num)<br>print(num*10)
+            </div>
+            <p>Программа выполняет свою задачу. Но хочется сделать вывод в формате «25 * 10 = 250».</p>
+            <p>Вспоминаем про
+                <a href="output.html"><u><b>конкатенацию</b></u></a>, про которую говорили на
+                <a href="output.html"><u><b>прошлом уроке</b></u></a>. Увы, но число и строку нельзя между собой сложить. Придется наши числа превращать в строки. На помощь приходит функция <b>str()</b>.</p>
+            <div class="code">
+                num = input("Введи число:")<br>num = int(num)<br>result = num*10<br>print(str(num) + " * 10 = " + str(result))
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
