@@ -34,22 +34,26 @@
                 <a href="modules.html">Модули</a></p>
         </div>
         <div class="content_div">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer erat arcu, auctor non odio sed, mattis hendrerit tellus. Vivamus nec aliquam velit. Donec purus lectus, euismod porttitor finibus sed, feugiat quis mi. Sed non neque non ante dictum laoreet
-            ut eu sem. Phasellus ut arcu cursus, facilisis dolor non, volutpat neque. Phasellus sapien nisl, aliquam at fringilla ut, semper sed mauris. Nullam mollis fermentum pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia
-            nostra, per inceptos himenaeos. In volutpat nibh ac felis vulputate, non lacinia neque gravida. Suspendisse condimentum velit at metus suscipit, sit amet pretium enim ullamcorper. Fusce finibus varius suscipit. Integer suscipit iaculis porttitor.
-            Nunc consectetur, nisl eget fermentum semper, arcu est luctus purus, vel euismod felis neque sed quam. Maecenas sit amet turpis lacinia, aliquam purus id, malesuada dolor. Phasellus sodales leo id elit hendrerit venenatis. Sed vel est dignissim
-            velit volutpat elementum. Sed venenatis, diam eget viverra accumsan, velit libero posuere ante, non ornare felis magna id nisi. Pellentesque eget hendrerit purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-            turpis egestas. Phasellus posuere tortor et lectus commodo varius. Proin et diam id dolor gravida vehicula at id mauris. Sed lacus ligula, tincidunt vel consequat sed, lacinia suscipit diam. Pellentesque tincidunt ut neque id pretium. Aenean
-            bibendum enim vitae justo viverra, nec sollicitudin libero finibus. Proin finibus augue ullamcorper orci fringilla, maximus finibus eros mattis. Proin pharetra, enim vitae tincidunt tempor, ex turpis sodales tellus, sit amet viverra lacus
-            enim scelerisque ligula. In venenatis ligula lectus, efficitur ultricies felis maximus a. Phasellus tincidunt, turpis eu lobortis facilisis, quam turpis suscipit velit, ut condimentum lorem turpis eget elit. Mauris eget accumsan nisl. Donec
-            vitae quam mattis, dignissim urna a, commodo ex. Vestibulum vitae ipsum velit. Nulla facilisi. In blandit luctus elit. In at dui lectus. Donec sit amet egestas nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-            cubilia curae; Quisque porta nibh eu ligula fermentum vestibulum. Curabitur sit amet vehicula lacus. Nulla vel lorem ante. Pellentesque tempus id augue vel cursus. Pellentesque consequat magna quis lorem suscipit, ultricies tristique justo
-            vehicula. Sed ut diam nec eros rutrum malesuada. Donec placerat porta nunc. Proin auctor vulputate leo, ut suscipit purus rutrum vestibulum. Maecenas eu libero metus. Nulla pretium accumsan nunc nec scelerisque. Curabitur id ligula a mauris
-            facilisis tempus at nec quam. Ut sem est, fermentum nec diam sit amet, mattis mollis leo. Suspendisse pretium pulvinar ante id commodo. Nullam sit amet pellentesque quam. Duis mauris sem, ornare et semper vel, ultricies quis turpis. Nam mauris
-            nunc, condimentum id maximus tempus, iaculis sed diam. Curabitur nunc quam, imperdiet at accumsan non, tincidunt vitae nulla. Curabitur rhoncus orci ipsum, non suscipit tortor ultrices fringilla. Proin eleifend interdum neque, et consequat
-            nunc sollicitudin dapibus. Quisque congue sollicitudin nibh, at interdum nulla. Curabitur at commodo purus. Etiam nisl dui, pharetra ut magna id, rhoncus viverra dui. Integer condimentum fermentum nisi in viverra. Vestibulum nulla felis, suscipit
-            vitae aliquet vitae, volutpat vel nibh. Phasellus mollis, mi vitae porttitor tincidunt, est sapien lobortis metus, nec cursus eros orci ac orci. Nulla ut ultrices magna. Fusce interdum dolor et vestibulum molestie. Integer id sem a libero
-            ullamcorper fermentum. Vivamus convallis ligula et laoreet vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris nec lobortis leo. Mauris id nunc in metus pharetra egestas.
+            <h2>Модули</h2>
+            <p>Создаем собственные <b>модули</b> и <b>подключаем готовые</b>.</p>
+            <p><i><b>Модуль</b> - это <b>файл</b> с кодом <b>Python</b>.</i></p>
+            <p>Каждый раз, когда мы пишем отдельную программу, мы <b>создаем модуль.</b></p>
+            <h3>Подождите</h3>
+            <p>Допустим, нам необходимо сделать таймер, между числами которого будет <b>задержка</b> 1 секунда. Для этого нам понадобится <b>модуль time</b>.</p>
+            <p>Для того, чтобы <b>подключить модуль и его функции</b>, используется конструкция:</p>
+            <div class="code">
+                from название_модуля import название функции
+            </div>
+            <p>Либо же <b>импорт всех функций</b>:</p>
+            <div class="code">
+                from название_модуля import *
+            </div>
+            <p>Вернемся к задаче с таймером. Для задержки используется функция <b>sleep()</b>.</p>
+            <p>Для того, чтобы <b>подключить модуль и его функции</b>, используется конструкция:</p>
+            <div class="code">
+                from time import sleep<br>count = 10<br>while count > 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(count)<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;count -= 1<br>&nbsp;&nbsp;&nbsp;&nbsp;sleep(1)
+            </div>
+            <p><b>Таймер</b> выведет числа от 10 до 1 с <b>интервалом</b> в <b>одну секунду</b>.</p>
         </div>
     </div>
 </body>
