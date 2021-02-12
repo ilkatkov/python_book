@@ -23,6 +23,19 @@
         color: black;
     }
     
+    .nav_link {
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    
+    .nav_link:hover {
+        background-size: 100% 1px;
+    }
+    
     h3,
     h2 {
         text-align: center;
@@ -37,6 +50,8 @@
         text-align: center;
         /* max-height: auto; */
     }
+    
+    .header_div:hover {}
     
     .img_logo {
         margin-top: 12px;
@@ -70,6 +85,7 @@
     }
     
     .content_div {
+        text-decoration: none;
         margin-right: 15px;
         padding: 16px;
         max-width: 70%;
